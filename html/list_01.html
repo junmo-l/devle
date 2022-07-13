@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #333;
+        }
+        li {
+            list-style: none;
+            display: block;
+            width: 250px;
+            padding: 10px;
+            border: 1px solid red;
+            margin-bottom: 10px;
+        }
+        ul.sample li:nth-child(3) {
+            color: red;
+        }
+        ul.sample li:nth-last-child(2) {
+            color: blue;
+        }
+        ul.sample li:nth-last-child(4) {
+            color: #ffff00;
+        }
+        .sample li:nth-child(2n) {
+            /* 짝수처리 2n 혹은 even */
+            color: hotpink;
+            font-weight: bold;
+        }
+        .sample li:nth-child(2n-1) {
+             /* 홀수만 처리 2n-1 혹은 odd */
+            color: green;
+            font-weight: bold;
+            border: solid 5px red;
+            width: 300px;
+        }
+        .sample li:nth-child(n+1):nth-child(-n+3) {
+            /* 1번째부터 3번째까지 */
+            border: solid 5px gold;
+            width: 150px;
+        }
+    </style>
+    <title>list_01 가상선택자</title>
+</head>
+<body>
+    <ul class="sample">
+        <li>child1(first)</li>
+        <li>child2</li>
+        <li>child3</li>
+        <li>child4</li>
+        <li>child5</li>
+        <li>child6</li>
+        <li>child7</li>
+        <li>child8(last)</li>
+    </ul>
+</body>
+</html>

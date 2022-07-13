@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            margin-bottom: 20px;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+        }
+        /* 마진 패딩 포함 */
+        .box1 {
+           background-color: blueviolet;
+           border: solid 10px red;
+           box-sizing: content-box;
+        }
+        /* 테두리값만 적용 */
+        .box2 {
+           background-color: blueviolet;
+           border: solid 10px red;
+           box-sizing: border-box;
+        }
+    </style>
+    <title>box_sizing</title>
+</head>
+
+<body>
+    <!-- div.box$*2 class 속성 넣기 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

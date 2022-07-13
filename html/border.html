@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        li {
+            /* border: solid 1px #ccc; */
+            display: inline-block;  
+            padding: 20px;
+            margin: 0 20px;
+        }
+        #style1 {
+            border: dotted 5px violet;
+            box-shadow: 10px -5px 10px 10px rebeccapurple;
+        }
+        #style2 {
+            border: dashed 5px blue;
+            box-shadow: -10px 5px 5px 0px lightblue;
+        }
+        #style3 {
+            border: 5px greenyellow;
+            border-style: dashed dotted;
+            box-shadow: 10px 5px 5px 0px darkcyan;
+        }
+        #style4 {
+            border: 5px solid gold;
+            box-shadow: 0 0 10px 3px inset;
+        }
+        /* 테두리 두께 지정
+        border-width: 크기 | thin | medium | thick */
+    </style>
+    <title>border</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li id="style1">0001</li>
+            <li id="style2">0002</li>
+            <li id="style3">0003</li>
+            <li id="style4">0004</li>
+        </ul>
+    </div>
+</body>
+</html>
