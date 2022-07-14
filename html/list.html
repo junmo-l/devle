@@ -6,7 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         ul {
-            list-style-image: url("https://bit.ly/2GqYPc7");
+            /* list-style-image: url("https://bit.ly/2GqYPc7"); */
+            list-style: none;
+            /* margin-left: 20px; */
+        }
+
+        li {
+            background-image: url(images/book-icon.png);
+            background-repeat: no-repeat;
+            line-height: 40px; /*줄간격*/
+            background-position: left center;
+            padding-left: 50px;
+        }
+        
+        div {
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+        
+        #back {
+            width: 150px;
+            padding: 20px;
+            height: 200px;
+            background: pink;
+        }
+
+        #im {
+            width: 90%;
+            height: 70%; 
+            background-image: url(images/img08.jpeg);
+            background-size: cover;
+        }
+        p {
+            margin: 0 auto;
+            /* border: 1px solid red; */
+            width: 150px;
+            height: 140px;
         }
     </style>
     <title>list</title>
@@ -19,5 +54,11 @@
         <li>비행기</li>
         <li>관광배</li>
     </ul>
+
+    <div id="back">
+        <div id="im">
+            <p><h5>You have to fight to reach your dream</h5></p>
+        </div>
+    </div>
 </body>
 </html>
