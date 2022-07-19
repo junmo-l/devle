@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap {
+            /* width: 300px; */
+            /* margin: 100px auto; */
+        }
+        #Box {
+            width: 151px;
+            height: 151px;
+            background: url(rainbow_ball.png) no-repeat 0 0;
+            animation: box 3s steps(6) infinite;
+  
+        }
+        @keyframes box {
+            form {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -906px 0;
+            }
+        }
+    </style>
+    <title>연속애니메이션</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="Box"></div>
+    </div>
+</body>
+</html>
