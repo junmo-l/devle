@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<style>
+			div {
+				width: 200px;
+				height: 200px;
+				/* border: 1px solid red; */
+			}
+			.container {
+				border: solid 1px red;
+				margin: 100px 0 0 100px;
+				float: left;
+				perspective: 300px;
+			}
+			.box1 {
+				background: lightcoral;
+				transform: rotateY(45deg);
+			}
+			.box2 {
+				background: lightblue;
+				transform: rotateX(45deg);
+				transform-origin: left top;
+			}
+			#tr-style1 {
+				transform-style: flat;
+			}
+			#tr-style2 {
+				transform-style: preserve-3d;
+			}
+		</style>
+		<title>Transform</title>
+ 	</head>
+	<body>		
+		<div class="container">
+			<div class="box1" id="tr-style1">
+				<div class="box2"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="box1" id="tr-style2">
+				<div class="box2"></div>
+			</div>
+		</div>
+	</body>
+</html>
