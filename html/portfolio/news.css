@@ -161,6 +161,9 @@ a:link {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0,0,0,0.3);
 }
+.movieList > li:hover .caption p {
+    color: yellow;
+}
 #left:hover {
     transform: scale(1.05);
     cursor: pointer;
