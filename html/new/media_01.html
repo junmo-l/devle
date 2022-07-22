@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        #wrap {
+            width: 90%;
+            margin: 0 auto;
+            border: solid 4px #000;
+        }
+        #wrap div {
+            display: inline-block;
+            height: 150px;
+        }
+        #wrap div:first-child {
+            background: lightblue;
+        }
+        #wrap div:nth-child(2) {
+            background: lightcoral;
+        }
+        #wrap div:nth-child(3) {
+            background: lightgreen;
+        }
+        #wrap div:nth-child(4) {
+            background: lightsalmon;
+        }
+        #wrap div:nth-child(5) {
+            background: lightseagreen;
+        }
+
+        /* 미디어쿼리 */
+        @media all and (min-width:320px) {
+            #wrap div {
+                width:100%;
+            }
+        }
+        @media all and (min-width:768px) {
+            #wrap div {
+                width: 50%;
+            }
+            #wrap div:nth-child(5) {
+                width: 100%;
+            }
+        }
+        @media all and (min-width:1024px) {
+            #wrap div {
+                width: 20%;
+            }
+            #wrap div:nth-child(5) {
+                width: 20%;
+            }
+        }
+    </style>
+    <title>반응형</title>
+</head>
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

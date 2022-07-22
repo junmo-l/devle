@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wrap {
+            background: lavender;
+            border: solid 1px red;
+            margin-bottom: 30px;
+            display: flex;
+        }
+
+        .box {
+            width: 80px;
+            margin: 5px;
+            padding: 5px 40px;
+            background: lemonchiffon;
+        }
+
+        #opt1 {
+            flex-wrap: nowrap; /*한줄에 표시*/
+        }
+        #opt2 {
+            flex-wrap: wrap; /*여러줄에 표시*/
+        }
+        #opt3{
+            flex-wrap: wrap-reverse; /*시작점과 끝점이 바뀌어서 여러줄에 표시*/
+        }
+       
+        
+    </style>
+    <title>flex</title>
+</head>
+<body>
+    <div id="opt1" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+    </div>
+
+    <div id="opt2" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+    </div>
+
+    <div id="opt3" class="wrap">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
