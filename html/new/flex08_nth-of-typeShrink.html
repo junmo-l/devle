@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap {
+            width: 100%;
+            background: #333;
+            display: flex;
+        }
+
+        article {
+            width: 1000px;
+            background: #999;
+            font-size: 50px;
+            display: flex;
+            border: 1px solid beige;
+            box-sizing: border-box;
+        }
+
+        article:nth-of-type(1) {
+            flex-shrink: 2;
+        }
+
+        /* 자식 요소의 크기를 줄였을 때 안쪽 여백 감소 비율 지정(수치가 크면 작아짐) */
+        article:nth-of-type(2) {
+            flex-shrink: 1;
+        }
+
+        article:nth-of-type(3) {
+            flex-shrink: 3;
+        }
+
+        /* 전체 너비값의 비율 조절할 때 사용 */
+        /* 
+        article:nth-of-type(1) {
+            flex: 1;
+        }
+
+        article:nth-of-type(2) {
+            flex: 2;
+        }
+
+        article:nth-of-type(3) {
+            flex: 3;
+        } */
+    </style>
+    <title>크기 축소</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <article class="box">FLEX GROW 1</article>
+        <article class="box">FLEX GROW 2</article>
+        <article class="box">FLEX GROW 3</article>
+    </div>
+</body>
+
+</html>

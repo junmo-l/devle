@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap {
+            display: grid;
+            /* 그리드 지정 */
+            grid-template-columns: repeat(3, 1fr);
+            /* 균등한너비 같은칼럼 3개 / 300px 300px 300px */
+
+            grid-template-rows: minmax(100px, auto)
+                /* 줄높이 지정 200px; / auto, auto; 로 줄수있음 */
+        }
+
+        .item {
+            padding: 10px;
+            background: #eee;
+            overflow: auto;
+        }
+
+        .item:nth-child(odd) {
+            background: #bbb;
+        }
+    </style>
+    <title>기본그리드</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ante pretium, tincidunt erat
+            quis, placerat elit. Nunc fermentum diam nec sapien tincidunt accumsan. Ut rhoncus nec felis non varius.
+            Nulla aliquet ultricies convallis. Vivamus nec ornare libero, sed efficitur libero.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ante pretium, tincidunt erat
+            quis, placerat elit. Nunc fermentum diam nec sapien tincidunt accumsan. Ut rhoncus nec felis non varius.
+            Nulla aliquet ultricies convallis. Vivamus nec ornare libero, sed efficitur libero.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ante pretium, tincidunt erat
+            quis, placerat elit. Nunc fermentum diam nec sapien tincidunt accumsan. Ut rhoncus nec felis non varius.
+            Nulla aliquet ultricies convallis. Vivamus nec ornare libero, sed efficitur libero.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ante pretium, tincidunt erat
+            quis, placerat elit. Nunc fermentum diam nec sapien tincidunt accumsan. Ut rhoncus nec felis non varius.
+            Nulla aliquet ultricies convallis. Vivamus nec ornare libero, sed efficitur libero.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ante pretium, tincidunt erat
+            quis, placerat elit. Nunc fermentum diam nec sapien tincidunt accumsan. Ut rhoncus nec felis non varius.
+            Nulla aliquet ultricies convallis. Vivamus nec ornare libero, sed efficitur libero.</div>
+    </div>
+</body>
+
+</html>
